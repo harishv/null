@@ -1,355 +1,420 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>NulTV</title>
-		<meta name="description" content=""/>
-		<meta name="keywords" content="nultv, nul, tv, public, video clips, post, videoblog, community site, videos, clips, online news, america news, news america"/>
-		<link rel="shortcut icon" href="/images/favicon.ico"/>
-		<link href="/css/style.css" rel="stylesheet" type="text/css" />
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script src="/js/angular.min.js"></script>
-		<script src="/js/controllers.js"></script>
-		<script src="/players/flowplayer/flowplayer-3.2.12.min.js"></script>
-	</head>
-	<body>
-	<div class="container">
-		<div class="navgation">
-			<nav>
-				<a href="#"><span>Now!</span></a>
-				<span class="separator"></span>
-				<a href="#" class="active"><span>News</span></a>
-				<span class="separator"></span>
-				<a href="#"><span>Entertainment</span></a>
-				<span class="separator"></span>
-				<a href="#"><span>Finance</span></a>
-				<span class="separator"></span>
-				<a href="#"><span>Lifestyle</span></a>
-				<span class="separator"></span>
-				<a href="#"><span>Local</span></a>
-				<span class="separator"></span>
-				<a href="#"><span>Live</span></a>
-		</nav>
-		<!-- <div class="navright">
-			<a href="#" class="login">Login</a>
-			<span class="separator"></span>
-			<a href="#" class="signup">Sign Up</a>
-		</div> -->
-	</div>
-	<!--Navgation End-->
+  <head>
+    <meta charset="utf-8"/>
+    <title>NulTV</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content="nultv, nul, tv, public, video clips, post, videoblog, community site, videos, clips, online news, america news, news america"/>
+    <link rel="shortcut icon" href="/images/favicon.ico"/>
+    <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/controllers.js"></script>
+    <script src="/players/flowplayer/flowplayer-3.2.12.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navgation">
+        <nav>
+          <a href="#"><span>Now!</span></a>
+          <span class="separator"></span>
+          <a href="#" class="active"><span>News</span></a>
+          <span class="separator"></span>
+          <a href="#"><span>Entertainment</span></a>
+          <span class="separator"></span>
+          <a href="#"><span>Finance</span></a>
+          <span class="separator"></span>
+          <a href="#"><span>Lifestyle</span></a>
+          <span class="separator"></span>
+          <a href="#"><span>Local</span></a>
+          <span class="separator"></span>
+          <a href="#"><span>Live</span></a>
+        </nav>
+        <!-- <div class="navright">
+          <a href="#" class="login">Login</a>
+          <span class="separator"></span>
+          <a href="#" class="signup">Sign Up</a>
+        </div> -->
+      </div>
+      <!--Navgation End-->
 
-	<header>
-		<span class="logo"><img src="/images/nultv-logo.png" /></span>
-		<!-- <div class="right">
-			<div class="row pullright">Welcome Guest</div>
-			<div class="searcharea">
-				<input type="text" name="" placeholder="Search..."/>
-				<input type="Submit" name="" class="search-btn"/>
-			</div>
-		</div> -->
-	</header>
-	<!--Header End-->
+      <header>
+        <span class="logo"><img src="/images/nultv-logo.png"/></span>
+        <!-- <div class="right">
+          <div class="row pullright">Welcome Guest</div>
+          <div class="searcharea">
+            <input type="text" name="" placeholder="Search..."/>
+            <input type="Submit" name="" class="search-btn"/>
+          </div>
+        </div> -->
+      </header>
+      <!--Header End-->
 
-	<div class="banner">
-		<img src="/images/topbanner.jpg"/>
-	</div>
-	<!--banner End-->
+      <div class="banner">
+        <img src="/images/topbanner.jpg"/>
+      </div>
+      <!--banner End-->
 
-	<article>
-		<aside class="width67">
-			<div class="slideshow">
-				<div class="width60">
-					<div class="video">
-						<img src="/images/video.jpg"/>
-					</div>
-				</div>
-				<div class="slideshow-content width40">
-					<div class="slideshow-title">Miss Teen USA didn't know she was being watched</div>
-					<p>Cassidy Wolf thought she was safe when she was on her computer, especially because everything looked quite normal.</p>
-				</div>
-			</div>
-			<!--Slideshow Videos End-->
+      <article>
+        <aside class="width67">
+          <div class="slideshow">
+            <div class="width60">
+              <div class="video">
+                <img src="/images/video.jpg"/>
+              </div>
+            </div>
+            <div class="slideshow-content width40">
+              <div class="slideshow-title">Miss Teen USA didn't know she was being watched</div>
+              <p>Cassidy Wolf thought she was safe when she was on her computer, especially because everything looked quite normal.</p>
+            </div>
+          </div>
+          <!--Slideshow Videos End-->
 
-			<div class="clear"></div>
+          <div class="clear"></div>
 
-			<div class="module">
-				<div class="module-title">Trending Videos</div>
-				<div class="module-inner paddingR_o">
-					<div class="trending-videos">
-						<div class="width50">
-							<span class="gallerythumb">
-								<a href="#">
-									<img src="images/thumb1.jpg"/>
-									<img class="play" src="/images/play-icon.png">
-								</a>
-							</span>
-							<span>
-								<p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-						<div class="width50">
-							<span class="gallerythumb"><a href="#">
-								<img src="images/thumb2.jpg"/>
-								<img class="play" src="/images/play-icon.png">
-							</a></span>
-							<span>
-								<p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-						<div class="width50">
-							<span class="gallerythumb"><a href="#">
-								<img src="images/thumb3.jpg"/>
-								<img class="play" src="/images/play-icon.png">
-							</a></span>
-							<span>
-								<p>Glenn Greenwald's Partner Detained At UK Airport Under Terrorism Ac</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-						<div class="width50">
-							<span class="gallerythumb"><a href="#">
-								<img src="images/thumb4.jpg"/>
-								<img class="play" src="/images/play-icon.png">
-							</a></span>
-							<span>
-								<p>Philippines Ferry Crash: Death Toll Hits 39</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-						<div class="width50">
-							<span class="gallerythumb"><a href="#">
-								<img src="images/thumb1.jpg"/>
-								<img class="play" src="/images/play-icon.png">
-							</a></span>
-							<span>
-								<p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-						<div class="width50">
-							<span class="gallerythumb"><a href="#">
-								<img src="images/thumb2.jpg"/>
-								<img class="play" src="/images/play-icon.png">
-							</a></span>
-							<span>
-								<p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-						<div class="width50">
-							<span class="gallerythumb"><a href="#">
-								<img src="images/thumb3.jpg"/>
-								<img class="play" src="/images/play-icon.png">
-							</a></span>
-							<span>
-								<p>Glenn Greenwald's Partner Detained At UK Airport Under Terrorism Ac</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-						<div class="width50">
-							<span class="gallerythumb"><a href="#">
-								<img src="images/thumb4.jpg"/>
-								<img class="play" src="/images/play-icon.png">
-							</a></span>
-							<span>
-								<p>Philippines Ferry Crash: Death Toll Hits 39</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-						<div class="width50">
-							<span class="gallerythumb"><a href="#">
-								<img src="images/thumb1.jpg"/>
-								<img class="play" src="/images/play-icon.png">
-							</a></span>
-							<span>
-								<p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-						<div class="width50">
-							<span class="gallerythumb"><a href="#">
-								<img src="images/thumb2.jpg"/>
-								<img class="play" src="/images/play-icon.png">
-							</a></span>
-							<span>
-								<p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-						<div class="width50">
-							<span class="gallerythumb"><a href="#">
-								<img src="images/thumb3.jpg"/>
-								<img class="play" src="/images/play-icon.png">
-							</a></span>
-							<span>
-								<p>Glenn Greenwald's Partner Detained At UK Airport Under Terrorism Ac</p>
-								<p class="small margin20_T">(2:52)<br> BBC News</p>
-							</span>
-						</div>
-					</div>
-					<!-- <div class="">
-						<div class="row">
-							<div class="gallerythumb"><a href="#"><img src="images/thumb1.jpg"/></a></div>
-							<p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
-							<p class="small margin20_T">(2:52)<br> BBC News</p>
-						</div>
-						<div class="row">
-							<div class="gallerythumb"><a href="#"><img src="images/thumb2.jpg"/></a></div>
-							<p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
-							<p class="small margin20_T">(2:52)<br> BBC News</p>
-						</div>
-						<div class="row">
-							<div class="gallerythumb"><a href="#"><img src="images/thumb3.jpg"/></a></div>
-							<p>Glenn Greenwald's Partner Detained At UK Airport Under Terrorism Ac</p>
-							<p class="small margin20_T">(2:52)<br> BBC News</p>
-						</div>
-						<div class="row">
-							<div class="gallerythumb"><a href="#"><img src="images/thumb4.jpg"/></a></div>
-							<p>Philippines Ferry Crash: Death Toll Hits 39</p>
-							<p class="small margin20_T">(2:52)<br> BBC News</p>
-						</div>
-					</div> -->
-				</div>
-			</div>
-			<!--Trending Videos End-->
+          <div class="module">
+            <div class="module-title">Trending Videos</div>
+            <div class="module-inner paddingR_o">
+              <div class="trending-videos">
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb1.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb2.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb3.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Glenn Greenwald's Partner Detained At UK Airport Under Terrorism Ac</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb4.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Philippines Ferry Crash: Death Toll Hits 39</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb1.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb2.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb3.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Glenn Greenwald's Partner Detained At UK Airport Under Terrorism Ac</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb4.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Philippines Ferry Crash: Death Toll Hits 39</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb1.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb2.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+                <div class="width50">
+                  <span class="gallerythumb">
+                    <a href="#">
+                      <img src="/images/thumb3.jpg"/>
+                      <img class="play" src="/images/play-icon.png">
+                    </a>
+                  </span>
+                  <span>
+                    <p>Glenn Greenwald's Partner Detained At UK Airport Under Terrorism Ac</p>
+                    <p class="small margin20_T">(2:52)<br> BBC News</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Trending Videos End-->
 
-			<div class="module">
-				<div class="module-title">Huffpost live</div>
-				<div class="livevideo"><img src="images/huffpost-live.jpg" /></div>
-			</div>
-			<!--Huffpost live End-->
+          <div class="module">
+            <div class="module-title">Huffpost live</div>
+            <div class="livevideo">
+              <img src="/images/huffpost-live.jpg"/>
+            </div>
+          </div>
+          <!--Huffpost live End-->
 
-			<div class="module">
-				<div class="module-title">World News</div>
-				<div class="module-inner">
-					<div class="row">NEW GOVERNMENT, SAME OLD DRUG WAR</div>
-					<div class="row">Thank You, Secretary General Ban Ki-moon, for Keeping Gender Equality on Top of the Agenda</div>
-					<div class="row">Movements Without Leaders</div>
-					<div class="row">The Fascinating Tale of Fascist Italy's All-Gay Island Paradise</div>
-					<a class="more" href="#">More World News</a> </div>
-			</div>
-			<!--World News End-->
+          <div class="module">
+            <div class="module-title">World News</div>
+            <div class="module-inner">
+              <div class="row">NEW GOVERNMENT, SAME OLD DRUG WAR</div>
+              <div class="row">Thank You, Secretary General Ban Ki-moon, for Keeping Gender Equality on Top of the Agenda</div>
+              <div class="row">Movements Without Leaders</div>
+              <div class="row">The Fascinating Tale of Fascist Italy's All-Gay Island Paradise</div>
+              <a class="more" href="#">More World News</a>
+            </div>
+          </div>
+          <!--World News End-->
 
-			<div class="module">
-				<div class="module-title">Weird News</div>
-				<div class="module-inner">
-					<div class="row">WANTED: For World's Most Insane Name Change</div>
-					<div class="row">FREE TO GOOD HOME: 8-Foot Polar Bear</div>
-					<div class="row">IT'S REAL: CIA Reveals Area 51 Location</div>
-					<div class="row">Parking Meter Thief Who Stole $210K In Quarters Gets Prison</div>
-					<div class="row">WATCH: Bus RIder's Brazen Act Horrifies Passengers</div>
-					<a class="more" href="#">More Weird News</a> </div>
-			</div>
-			<!--Weird News End-->
+          <div class="module">
+            <div class="module-title">Weird News</div>
+            <div class="module-inner">
+              <div class="row">WANTED: For World's Most Insane Name Change</div>
+              <div class="row">FREE TO GOOD HOME: 8-Foot Polar Bear</div>
+              <div class="row">IT'S REAL: CIA Reveals Area 51 Location</div>
+              <div class="row">Parking Meter Thief Who Stole $210K In Quarters Gets Prison</div>
+              <div class="row">WATCH: Bus RIder's Brazen Act Horrifies Passengers</div>
+              <a class="more" href="#">More Weird News</a>
+            </div>
+          </div>
+          <!--Weird News End-->
 
-			<div class="module">
-				<div class="module-title">Around The Web</div>
-				<div class="module-inner">
-					<div class="row">Militants kill 25 Egyptian policemen in Sinai</div>
-					<div class="row">Israel quietly maintains ties with Egyptian army</div>
-					<div class="row">San Diego mayor set to return amid recall drive</div>
-					<div class="row">Post-vacation, Obama to face Egypt, spending talks</div>
-					<div class="row">SKorea, US begin annual joint military drills</div>
-					<a class="more" href="#">More News</a></div>
-			</div>
-			<!--AROUND THE WEB End-->
+          <div class="module">
+            <div class="module-title">Around The Web</div>
+            <div class="module-inner">
+              <div class="row">Militants kill 25 Egyptian policemen in Sinai</div>
+              <div class="row">Israel quietly maintains ties with Egyptian army</div>
+              <div class="row">San Diego mayor set to return amid recall drive</div>
+              <div class="row">Post-vacation, Obama to face Egypt, spending talks</div>
+              <div class="row">SKorea, US begin annual joint military drills</div>
+              <a class="more" href="#">More News</a>
+            </div>
+          </div>
+          <!--AROUND THE WEB End-->
+        </aside>
 
+        <aside class="width30 margin20_L">
+          <div class="rt-tpadd">
+            <img src="/images/Rightside-add.jpg"/>
+          </div>
+          <div class="module margin20_T">
+            <div class="module-title">Top News</div>
+            <div class="module-inner">
+              <div class="videorow">
+                <span class="thumb">
+                  <img src="/images/thumb-big-1.jpg"/>
+                </span>
+                <span>
+                  <p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
+                </span>
+              </div>
+              <div class="videorow">
+                <span class="thumb">
+                  <img src="/images/thumb-big-2.jpg"/>
+                </span>
+                <span>
+                  <p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
+                </span>
+              </div>
+              <div class="videorow">
+                <span class="thumb">
+                  <img src="/images/thumb-big-1.jpg"/>
+                </span>
+                <span>
+                  <p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
+                </span>
+              </div>
+              <div class="videorow">
+                <span class="thumb">
+                  <img src="/images/thumb-big-2.jpg"/>
+                </span>
+                <span>
+                  <p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
+                </span>
+              </div>
+              <div class="videorow">
+                <span class="thumb">
+                  <img src="/images/thumb-big-1.jpg"/>
+                </span>
+                <span>
+                  <p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
+                </span>
+              </div>
+              <div class="videorow">
+                <a href="#" class="more right">More Videos</a>
+              </div>
+            </div>
+          </div>
+          <!--Top News End-->
 
+          <div class="rt-btadd margin20_T">
+            <img src="/images/Rightside-add2.jpg"/>
+          </div>
+          <div class="module twitterposts">
+            <div class="module-title">Twitter on the news</div>
+            <div class="module-inner width40">
+              <div class="row devider twitter-cont">
+                <p><img src="/images/small-thumb1.jpg"/></p>
+                <p><strong class="blue">Rob Fee@</strong>robfee</p>
+                <p>I wish every episode of Breaking Bad started with the cast playing in a fountain like on Friends.</p>
+                <p class="gray margin20_T small"><img src="/images/twitter-small.png" align="absmiddle"/> 7:35 AM - 19 Aug 13</p>
+                <p class="gray small"><img src="/images/reply.png" align="absmiddle"/> Reply <span class="right"><img src="/images/retweet.png" align="absmiddle"/> Retweet</span></p>
+                <p class="gray small"><img src="/images/favorite.png" align="absmiddle"/> Favorite</p>
+              </div>
+              <div class="row devider twitter-cont">
+                <p><img src="/images/small-thumb1.jpg"/></p>
+                <p><strong class="blue">Rob Fee@</strong>robfee</p>
+                <p>I wish every episode of Breaking Bad started with the cast playing in a fountain like on Friends.</p>
+                <p class="gray margin20_T small"><img src="/images/twitter-small.png" align="absmiddle"/> 7:35 AM - 19 Aug 13</p>
+                <p class="gray small"><img src="/images/reply.png" align="absmiddle"/> Reply <span class="right"><img src="/images/retweet.png" align="absmiddle"/> Retweet</span></p>
+                <p class="gray small"><img src="/images/favorite.png" align="absmiddle"/> Favorite</p>
+              </div>
+            </div>
+            <div class="width50 twitterAdd">
+              <img src="/images/twitterAdd.jpg"/>
+            </div>
+          </div>
+          <!--Twitter on the news End-->
 
-		</aside>
-		<aside class="width30 margin20_L">
-			<div class="rt-tpadd"><img src="images/Rightside-add.jpg"/></div>
-			<div class="module margin20_T">
-				<div class="module-title">Top News</div>
-				<div class="module-inner">
-					<div class="videorow"> <span class="thumb"><img src="images/thumb-big-1.jpg"/></span> <span>
-						<p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
+          <div class="clear"></div>
 
-						</span> </div>
-					<div class="videorow"> <span class="thumb"><img src="images/thumb-big-2.jpg"/></span> <span>
-						<p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
-						</span> </div>
-					<div class="videorow"> <span class="thumb"><img src="images/thumb-big-1.jpg"/></span> <span>
-						<p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
-						</span> </div>
-					<div class="videorow"> <span class="thumb"><img src="images/thumb-big-2.jpg"/></span> <span>
-						<p>Secret Guantanamo Camp To Be Challenged By 9/11 Lawyer</p>
-						</span> </div>
-					<div class="videorow"> <span class="thumb"><img src="images/thumb-big-1.jpg"/></span> <span>
-						<p>Bob Filner Recall Campaign Begins Amid Sexual Harassment Allegations</p>
+          <div class="module popular">
+            <div class="module-title">Popular Stories</div>
+            <div class="module-inner">
+              <div class="row">
+                <span class="width40">
+                  <img src="/images/popular-stories-thumb1.jpg"/>
+                </span>
+                <span class="width60">
+                  <p class="small">MEDIA</p>
+                  <p>Shocking: Glenn Greenwald's Partner Detained</p>
+                </span>
+              </div>
+              <div class="row">
+                <span class="width40">
+                  <img src="/images/popular-stories-thumb2.jpg"/>
+                </span>
+                <span class="width60">
+                  <p class="small">BUSINESS</p>
+                  <p>Feds Open Bribery Investigation</p>
+                </span>
+              </div>
+              <div class="row">
+                <span class="width40">
+                  <img src="/images/popular-stories-thumb3.jpg"/>
+                </span>
+                <span class="width60">
+                  <p class="small">WORLD</p>
+                  <p>Dozens Of Muslim Brotherhood Detainees Killed</p>
+                </span>
+              </div>
+              <div class="row">
+                <span class="width40">
+                  <img src="/images/popular-stories-thumb4.jpg"/>
+                </span>
+                <span class="width60">
+                  <p class="small">Sport</p>
+                  <p>Chaos Erupts After A-Rod Plunked </p>
+                </span>
+              </div>
+              <a href="#" class="more">More Stories</a>
+            </div>
+          </div>
+          <!--Popular Stories End-->
+        </aside>
+      </article>
+      <!--Article End-->
 
-						</span> </div>
-					<div class="videorow"><a href="#" class="more right">More Videos</a></div> </div>
-			</div>
-			<!--Top News End-->
+      <div class="banner">
+        <img src="/images/Bottom-add.jpg"/>
+      </div>
+      <!--Bottom-add End-->
+    </div>
 
-			<div class="rt-btadd margin20_T"><img src="images/Rightside-add2.jpg"/></div>
-			<div class="module twitterposts">
-				<div class="module-title">Twitter on the news</div>
-				<div class="module-inner width40">
-					<div class="row devider twitter-cont">
-						<p><img src="images/small-thumb1.jpg"/></p>
-						<p><strong class="blue">Rob Fee@</strong>robfee</p>
-						<p>I wish every episode of Breaking Bad started with the cast playing in a fountain like on Friends.</p>
-						<p class="gray margin20_T small"><img src="images/twitter-small.png" align="absmiddle"/> 7:35 AM - 19 Aug 13</p>
-						<p class="gray small"><img src="images/reply.png" align="absmiddle"/> Reply <span class="right"><img src="images/retweet.png" align="absmiddle"/> Retweet</span></p>
-						<p class="gray small"><img src="images/favorite.png" align="absmiddle"/> Favorite</p>
-					</div>
-					<div class="row devider twitter-cont">
-						<p><img src="images/small-thumb1.jpg"/></p>
-						<p><strong class="blue">Rob Fee@</strong>robfee</p>
-						<p>I wish every episode of Breaking Bad started with the cast playing in a fountain like on Friends.</p>
-						<p class="gray margin20_T small"><img src="images/twitter-small.png" align="absmiddle"/> 7:35 AM - 19 Aug 13</p>
-						<p class="gray small"><img src="images/reply.png" align="absmiddle"/> Reply <span class="right"><img src="images/retweet.png" align="absmiddle"/> Retweet</span></p>
-						<p class="gray small"><img src="images/favorite.png" align="absmiddle"/> Favorite</p>
-					</div>
-				</div>
-				<div class="width50 twitterAdd"><img src="images/twitterAdd.jpg"/></div>
-			</div>
-			<!--Twitter on the news End-->
-
-			<div class="clear"></div>
-			<div class="module popular">
-				<div class="module-title">Popular Stories</div>
-				<div class="module-inner">
-					<div class="row"> <span class="width40"><img src="images/popular-stories-thumb1.jpg"/></span> <span class="width60">
-						<p class="small">MEDIA</p>
-						<p>Shocking: Glenn Greenwald's Partner Detained</p>
-						</span> </div>
-					<div class="row"> <span class="width40"><img src="images/popular-stories-thumb2.jpg"/></span> <span class="width60">
-						<p class="small">BUSINESS</p>
-						<p>Feds Open Bribery Investigation</p>
-						</span> </div>
-					<div class="row"> <span class="width40"><img src="images/popular-stories-thumb3.jpg"/></span> <span class="width60">
-						<p class="small">WORLD</p>
-						<p>Dozens Of Muslim Brotherhood Detainees Killed</p>
-						</span> </div>
-					<div class="row"> <span class="width40"><img src="images/popular-stories-thumb4.jpg"/></span> <span class="width60">
-						<p class="small">Sport</p>
-						<p>Chaos Erupts After A-Rod Plunked </p>
-						</span> </div>
-					<a href="#" class="more">More Stories</a> </div>
-			</div>
-			<!--Popular Stories End-->
-
-		</aside>
-	</article>
-	<!--Article End-->
-
-	<div class="banner"><img src="images/Bottom-add.jpg"/></div>
-	<!--Bottom-add End-->
-
-
-</div>
-<footer>
-<div class="container">
-<summary> <span class="left">Copyright &copy;  2013  Logo Name. All Rights Reserved | <a href="#">My Account</a>.</span>
-<span class="right"><span class="left margin5">Follow Us on:</span>  <a href="#"><img src="images/twitter.png" /></a> <a href="#"><img src="images/facebook.png" /></a> <a href="#"><img src="images/google.png" /></a> <a href="#"><img src="images/linkdedin.png" /></a> </span> </summary>
-</div>
-</footer>
-<!--Footer End-->
-
-</body>
+    <footer>
+      <div class="container">
+        <summary>
+          <span class="left">
+            Copyright &copy;  2013  Logo Name. All Rights Reserved |
+            <a href="#">My Account</a>.
+          </span>
+          <span class="right">
+            <span class="left margin5">Follow Us on:</span>
+            <a href="#"><img src="/images/twitter.png"/></a>
+            <a href="#"><img src="/images/facebook.png"/></a>
+            <a href="#"><img src="/images/google.png"/></a>
+            <a href="#"><img src="/images/linkdedin.png"/></a>
+          </span>
+        </summary>
+      </div>
+    </footer>
+    <!--Footer End-->
+  </body>
 </html>

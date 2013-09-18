@@ -1,12 +1,14 @@
-var app = angular.module('wildridgeApp', []);
+var app = angular.module('nultvApp', []);
 
-app.factory('wildridgeHomePageService', function ($http) {
+// Home Page Serives
+app.factory('nultvHomePageService', function ($http) {
 	return {
+		getTrendingVideos: function () {
+			return $http.get('http://speakglobally.net/api/videos/home_video').then(function (result) {
+				return result.data.rows;
+			});
+		},
 		getLatestVideos: function () {
-			//since $http.get returns a promise,
-			//and promise.then() also returns a promise
-			//that resolves to whatever value is returned in it's
-			//callback argument, we can return that.
 			return $http.get('http://speakglobally.net/api/videos/latest').then(function (result) {
 				return result.data.rows;
 			});
@@ -16,25 +18,33 @@ app.factory('wildridgeHomePageService', function ($http) {
 				return result.data.rows[0];
 			});
 		},
-		getTop5News: function () {
-			return $http.get('/api/news/top5').then(function (result) {
+		getTopNews: function (count) {
+			return $http.get('http://wildridge.net/api/news/topnews?n=' + count).then(function (result) {
 				return result.data.rows;
 			});
 		},
-		getFeaturedVideo: function () {
-			return $http.get('http://speakglobally.net/api/videos/home_video').then(function (result) {
+		getTopNewsWithImages: function (count) {
+			return $http.get('http://wildridge.net/api/news/topnews_with_images?n=' + count).then(function (result) {
 				return result.data.rows;
 			});
 		}
 	};
 });
 
-app.controller('WildridgeHome', function ($scope, wildridgeHomePageService, $window) {
-	//the clean and simple way
-	$scope.latestVideos = wildridgeHomePageService.getLatestVideos();
-	$scope.latestVideo = wildridgeHomePageService.getLatestOneVideo();
-	$scope.top5 = wildridgeHomePageService.getTop5News();
+// Home Page Controller
+app.controller('NultvHome', function ($scope, nultvHomePageService, $window) {
+	// Trending Videos List
+	$scope.trendingVideos = nultvHomePageService.getTrendingVideos();
+	// Latest Videos List
+	$scope.latestVideos = nultvHomePageService.getLatestVideos();
+	// Top Latest Video Details
+	$scope.latestVideo = nultvHomePageService.getLatestOneVideo();
+	// Top 5 News items
+	$scope.top5 = nultvHomePageService.getTopNews(5);
+	// Top 5 News items with Graphics
+	$scope.topNewsAndGraphics = nultvHomePageService.getTopNewsWithImages(5);
 
+    // Set the hiro player's playlist with the latest video after getting the valid Video's Object
 	$scope.$watch('latestVideo', function (videoObj) {
 		if (videoObj !== undefined) {
 			$window.hiro.playList[0].url= 'http://91cefb89b61292d7a6a5-9b3e53ad93e76fa27450765a72dfcdf1.r61.cf2.rackcdn.com/' + videoObj.value.video_path;

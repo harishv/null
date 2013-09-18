@@ -77,6 +77,8 @@ content:""
 .gallerythumb {float:left; margin: 0 10px 0 5px; width:50%;}
 .gallerythumb a {position: relative; display: block;}
 
+.gallerythumb p.duration { position: absolute; bottom: 8px; left: 5px; float: left; color: #ffffff; text-decoration: none;}
+
 .col-md-1 {width:38%; float:right;}
 
 .videorow {border-top:1px solid #dcdcdc; padding:10px 0;}
@@ -98,11 +100,14 @@ content:""
 .videothumb a:hover, .videothumb a.active {border:1px solid #30a4e9;}
 
 .gallery p {color:#0089d9; line-height:17px;}
-img.play {bottom: 8px; position: absolute; right: 2px; width: auto !important;}
+.play {bottom: 8px; position: absolute; right: 2px; width: auto;}
 
-.popular {margin-bottom:10px; position:relative; color:#000; font-size:14px;}
-.popular p {margin-bottom:10px;}
+.popular {margin-bottom:10px; position:relative; color:#000000; font-size:14px;}
+/*.popular p {margin-bottom:10px;}*/
+.popular p a {color: #000000;}
 .popular .small {font-size:11px;}
+.popular .width40 > a { display: inline-block; position: relative;}
+.smallplay {bottom: 8px; position: absolute; right: 4px; width: 25px;}
 
 
 .twitter-cont {color:#000; font-size:12px;}
@@ -137,6 +142,17 @@ img.play {bottom: 8px; position: absolute; right: 2px; width: auto !important;}
 	padding-right: 0;
 }
 
+.RgtTopNews .news-item {
+	width: 100%;
+}
+.RgtTopNews .news-graphic {
+	float: left;
+	margin-right: 10px;
+}
+.RgtTopNews .news-graphic img {
+	width: 50%;
+}
+
 .margin10_T {margin-top:10px;}
 .margin20_T {margin-top:20px;}
 
@@ -165,9 +181,13 @@ background:-webkit-linear-gradient(top, #777877, #121212); padding:15px; color:#
 footer a {color:#cacaca; text-decoration:none;}
 footer .container {background:none;}
 
-.more {color:#005b90; font-size:14px; font-weight:bold;}
+.news {color:#005b90; font-size:14px;text-decoration: none;}
+.news:hover {color:#000000;}
+
+.more {color:#005b90; font-size:13px; font-weight:bold; float: right; margin-top: 6px;}
 .more:hover {color:#000; text-decoration:none;}
-.devider {border-bottom:1px solid #dcdcdc; padding:12px 0;}
+
+.divider {border-bottom:1px solid #dcdcdc; padding:12px 0;}
 
 .margin5 {margin:5px;}
 
